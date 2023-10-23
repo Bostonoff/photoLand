@@ -1,0 +1,45 @@
+.scrollbar__cart::-webkit-scrollbar {
+  width: 8px; 
+}
+
+.scrollbar__cart::-webkit-scrollbar-track {
+  background: #0e0f10; 
+}
+
+.scrollbar__cart::-webkit-scrollbar-thumb {
+  background: #f6cd46; 
+  border-radius: 8px; 
+}
+
+
+.scrollbar__cart::-webkit-scrollbar-vertical {
+  width: 8px; 
+}
+
+.scrollbar__cart::-webkit-scrollbar-thumb:vertical {
+  background: #f6cd46; 
+  border-radius: 8px; 
+}
+
+::-webkit-scrollbar {
+  width: 8px; 
+}
+
+::-webkit-scrollbar-track {
+  background: #f6cd46; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffffff; 
+  border-radius: 8px; 
+}
+
+
+::-webkit-scrollbar-vertical {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  background: #000000; 
+  border-radius: 8px; 
+}

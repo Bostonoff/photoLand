@@ -1,0 +1,68 @@
+.empty-cart {
+  width: 40vw;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Maison Neue";
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.empty-cart svg {
+  max-width: 100%;
+  padding: 1rem 3rem;
+}
+
+.empty-cart svg #oval,
+.empty-cart svg #plus,
+.empty-cart svg #diamond,
+.empty-cart svg #bubble-rounded {
+  animation: plopp 1s ease-out infinite;
+}
+
+.empty-cart svg #oval:nth-child(1),
+.empty-cart svg #plus:nth-child(2),
+.empty-cart svg #diamond:nth-child(3),
+.empty-cart svg #bubble-rounded:nth-child(4),
+.empty-cart svg #oval:nth-child(5),
+.empty-cart svg #plus:nth-child(6),
+.empty-cart svg #diamond:nth-child(7),
+.empty-cart svg #bubble-rounded:nth-child(8),
+.empty-cart svg #oval:nth-child(9),
+.empty-cart svg #plus:nth-child(10),
+.empty-cart svg #diamond:nth-child(11),
+.empty-cart svg #bubble-rounded:nth-child(12),
+.empty-cart svg #oval:nth-child(13),
+.empty-cart svg #plus:nth-child(14),
+.empty-cart svg #diamond:nth-child(15),
+.empty-cart svg #bubble-rounded:nth-child(16) {
+  animation-delay: -140ms;
+}
+
+.empty-cart svg #bg-line:nth-child(2) {
+  fill-opacity: 0.3;
+}
+
+.empty-cart svg #bg-line:nth-child(3) {
+  fill-opacity: 0.4;
+}
+
+@keyframes plopp {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, -10px);
+    opacity: 0;
+  }
+}
+
+.empty-cart h3 {
+  font-size: 2rem;
+  line-height: 2rem;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+}

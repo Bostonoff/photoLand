@@ -1,0 +1,122 @@
+# Client
+
+# dependencies
+/client/node_modules
+/client/.pnp
+client/.pnp.js
+
+# Api
+############################
+# OS X
+############################
+
+api/.DS_Store
+api/.AppleDouble
+api/.LSOverride
+api/Icon
+api/.Spotlight-V100
+api/.Trashes
+api/._*
+
+
+############################
+# Linux
+############################
+
+api/*~
+
+
+############################
+# Windows
+############################
+
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+
+
+############################
+# Packages
+############################
+
+*.7z
+*.csv
+*.dat
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.seed
+*.so
+*.swo
+*.swp
+*.swn
+*.swm
+*.out
+*.pid
+
+
+############################
+# Logs and databases
+############################
+
+.tmp
+*.log
+*.sql
+*.sqlite
+*.sqlite3
+
+
+############################
+# Misc.
+############################
+
+*#
+ssl
+.idea
+nbproject
+public/uploads/*
+!public/uploads/.gitkeep
+
+############################
+# Node.js
+############################
+
+api/lib-cov
+api/lcov.info
+api/pids
+api/logs
+api/results
+api/node_modules
+api/.node_history
+
+############################
+# Tests
+############################
+
+api/coverage
+
+############################
+# Strapi
+############################
+
+api/.env
+api/license.txt
+api/exports
+api/*.cache
+api/dist
+api/build
+api/.strapi-updater.json
