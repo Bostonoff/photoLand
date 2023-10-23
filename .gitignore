@@ -120,3 +120,6 @@ api/*.cache
 api/dist
 api/build
 api/.strapi-updater.json
+
+# global
+/node_modules
