@@ -9,6 +9,7 @@ import RelatedProducts from "../components/RelatedProducts";
 import { CartContext } from "../context/CartContext";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Loading from "./LoadingPage/Loading";
 const ProductDetails = () => {
   const { addToCart } = useContext(CartContext);
   const { id } = useParams();
@@ -16,7 +17,11 @@ const ProductDetails = () => {
   // get the product data base on the id
   const { data } = useFetch(`/products?populate=*&filters[id][$eq]=${id}`);
   if (!data) {
-    return <div>Loading...</div>;
+    return (
+      <div className="flex justify-center p-2">
+        <Loading />
+      </div>
+    );
   }
   // category title
   const categoryTitle = data[0].attributes.categories.data[0].attributes.title;

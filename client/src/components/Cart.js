@@ -1,14 +1,26 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 // icons
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { FiX } from "react-icons/fi";
-import "./EmptyCart/scrollbar.css"
+import "./EmptyCart/scrollbar.css";
 // components
 import { CartContext } from "../context/CartContext";
 import CartItem from "../components/CartItem";
 import Empty from "./EmptyCart/Empty";
+import { Link, useNavigate } from "react-router-dom";
 const Cart = () => {
   const { setIsOpen, cart, total, clearCart } = useContext(CartContext);
+  const [isLoading, setIsLoading] = useState(false);
+  const navigate = useNavigate();
+  // handle CheckOut
+  const handleCheckOut = () => {
+    setIsLoading(true);
+
+    setTimeout(() => {
+      setIsLoading(false);
+      navigate("/orders");
+    }, 5000);
+  };
   return (
     <div className="w-full h-full px-4 text-white">
       <div className="overflow-y-auto overflow-x-hidden h-[70vh] scrollbar__cart">
@@ -47,10 +59,18 @@ const Cart = () => {
               className="btn btn-accent hover:bg-accent-hover text-primary">
               Clear Cart
             </button>
-            <button className="btn btn-accent hover:bg-accent-hover text-primary flex items-center gap-[10px]">
-              Checkout
-              <AiOutlineArrowRight className="text-lg" />
-            </button>
+            <div>
+              {isLoading ? (
+                <div className="w-10 h-10 border-4 border-primary border-t-accent rounded-full animate-spin"></div>
+              ) : (
+                <button
+                  onClick={handleCheckOut}
+                  className="btn btn-accent hover:bg-accent-hover text-primary flex items-center gap-[10px]">
+                  Check Out
+                  <AiOutlineArrowRight className="text-lg" />
+                </button>
+              )}
+            </div>
           </div>
         ) : (
           <div className="h-full  absolute top-0 right-0 left-0  flex justify-center items-center -z-10">

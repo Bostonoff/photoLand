@@ -41,22 +41,22 @@ const Footer = () => {
           </a>
         </div>
         <div className="flex gap-x-6  mx-auto max-w-max text-2xl mb-16">
-          <a href="#" className="hover:text-red-600 transition-all">
+          <a href="#" className="hover:text-accent transition-all">
             <FaYoutube />
           </a>
-          <a href="#" className="hover:text-blue-500 transition-all">
+          <a href="#" className="hover:text-accent transition-all">
             <FaLinkedin />
           </a>
-          <a href="#" className="hover:text-blue-400 transition-all">
+          <a href="#" className="hover:text-accent transition-all">
             <FaInbox />
           </a>
-          <a href="#" className="hover:text-pink-500 transition-all">
+          <a href="#" className="hover:text-accent transition-all">
             <FaInstagram />
           </a>
-          <a href="#" className="hover:text-blue-500 transition-all">
+          <a href="#" className="hover:text-accent transition-all">
             <FaTwitter />
           </a>
-          <a href="#" className="hover:text-blue-500 transition-all">
+          <a href="#" className="hover:text-accent transition-all">
             <FaFacebook />
           </a>
         </div>

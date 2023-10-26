@@ -1,4 +1,5 @@
 import React, { createContext, useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 // import "react-toastify/dist/ReactToastify.css";
 // create context
@@ -10,7 +11,7 @@ const CartProvider = ({ children }) => {
   const [itemsAmount, setItemsAmount] = useState(0);
   const [amount, setAmount] = useState(0);
   const [total, setTotal] = useState(0);
-
+ 
   // cart amount
   useEffect(() => {
     const amount = cart.reduce((a, c) => {
@@ -117,8 +118,8 @@ const CartProvider = ({ children }) => {
       theme: "dark",
     });
   };
-  // checkout
-  // const checkout
+ 
+
   return (
     <CartContext.Provider
       value={{
@@ -132,6 +133,7 @@ const CartProvider = ({ children }) => {
         handleSelect,
         total,
         clearCart,
+       
       }}>
       {children}
     </CartContext.Provider>

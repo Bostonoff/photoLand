@@ -10,12 +10,12 @@ module.exports = {
         DEFAULT: "15px",
       },
     },
-    screens: {
-      sm: "640px",
-      md: "768px",
-      lg: "960px",
-      xl: "1340px",
-    },
+    // screens: {
+    //   sm: "640px",
+    //   md: "768px",
+    //   lg: "960px",
+    //   xl: "1340px",
+    // },
     extend: {
       colors: {
         body: "#1D1F23",

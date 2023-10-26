@@ -17,8 +17,8 @@ const Hero = () => {
           </div>
           <div className="flex flex-col gap-y-[30px] w-full max-w-lg mx-auto h-[500px]">
             <div className="grad flex-1 h-[250px] rounded-[10px] overflow-hidden relative p-6">
-              <div className="flex flex-col max-w-[144px] h-full justify-center">
-                <div className="text-[20px] uppercase font-medium leading-tight mb-4">
+              <div className="flex flex-col max-w-[120px] h-full justify-center">
+                <div className="text-[17px] uppercase font-medium leading-tight mb-4">
                   Save <span className="text-accent">35%</span> all{" "}
                   <span className="text-accent">dslr</span> cameras
                 </div>
@@ -33,8 +33,8 @@ const Hero = () => {
               />
             </div>
             <div className="grad flex-1 h-[250px] rounded-[10px] overflow-hidden relative p-6">
-              <div className="flex flex-col max-w-[144px] h-full justify-center">
-                <div className="text-[20px] uppercase font-medium leading-tight mb-4">
+              <div className="flex flex-col max-w-[120px] h-full justify-center">
+                <div className="text-[17px] uppercase font-medium leading-tight mb-4">
                   Save <span className="text-accent">25%</span> all{" "}
                   <span className="text-accent">mirrorless</span> cameras
                 </div>
